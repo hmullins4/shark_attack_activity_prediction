@@ -1,1 +1,11 @@
-# shark_attack_activity_prediction
+# Retail Database Construction & Shark ATtach Activity Prediction Using SQL Joins and Machine Learning
+
+This project showcases a full data pipeline spanning data engineering, SQL analytics, and machine learning. I began by ingesting multiple raw CSV files containing retail transaction data (customers, orders, products, and order items) and programmatically loaded them into a structured SQLite relational database using Python. I defined table schemas, enforced relationships between entities, and ensured data integrity to enable efficient querying.
+
+Using SQL, I performed complex multi-table joins (including LEFT JOINs across customers, orders, and order_items) to reconstruct transactional relationships and generate meaningful business insights. I wrote aggregation queries with GROUP BY to compute key metrics such as total customer spending, order frequency, and product-level sales performance, effectively transforming raw transactional data into analyzable summaries.
+
+In the second phase, I worked with a real-world dataset on shark attacks (~6,800 observations), where I conducted extensive data cleaning and preprocessing. This included handling missing values, standardizing inconsistent categorical labels, removing irrelevant features, and reducing noise in high-cardinality variables by grouping infrequent categories. I then applied encoding techniques (label encoding and one-hot encoding) to convert categorical variables into a format suitable for machine learning models.
+
+I built and evaluated several classification models, including Logistic Regression, Decision Trees, Support Vector Machines, and Random Forest. Initially, I approached the problem as a multiclass classification task, but after observing relatively low predictive performance, I strategically reframed it as a binary classification problem (e.g., fatal vs. non-fatal outcomes). This significantly improved model accuracy, with the Decision Tree model achieving the strongest performance. I evaluated models using train-test splits, confusion matrices, and ROC curve analysis to compare effectiveness and interpret results.
+
+Overall, this project demonstrates the ability to integrate database design, SQL-based data transformation, and machine learning workflows to extract insights and build predictive models from raw, unstructured data.
