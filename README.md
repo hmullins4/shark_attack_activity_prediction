@@ -1,4 +1,4 @@
-# Retail Database Construction & Shark ATtach Activity Prediction Using SQL Joins and Machine Learning
+# Retail Database Construction & Shark Attach Activity Prediction Using SQL Joins and Machine Learning
 
 This project showcases a full data pipeline spanning data engineering, SQL analytics, and machine learning. I began by ingesting multiple raw CSV files containing retail transaction data (customers, orders, products, and order items) and programmatically loaded them into a structured SQLite relational database using Python. I defined table schemas, enforced relationships between entities, and ensured data integrity to enable efficient querying.
 
